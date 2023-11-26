@@ -1,0 +1,74 @@
+.root {
+  --grey: #f0eef1;
+  --green: rgb(139, 228, 139);
+}
+
+.main {
+  background-color: var(--grey);
+}
+
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-auto-rows: auto;
+  gap: 30px;
+}
+
+.add_container {
+  display: flex;
+  grid-area: 1/1/2/-1;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+button.add_button {
+  border-width: 0;
+  font-size: large;
+  font-weight: bolder;
+
+  border-radius: 15px;
+  padding: 10px;
+}
+
+button.add_button:hover {
+  background-color: grey;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px grey;
+}
+
+.bookCard h1,
+p {
+  align-self: center;
+}
+
+.bookCard button {
+  border-radius: 10px;
+  border-width: 0;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bookCard button:hover {
+  filter: brightness(90%);
+}
+
+button.done {
+  background-color: var(--green);
+}
+
+button.remove {
+  background-color: var(--grey);
+}
